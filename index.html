@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Restoran</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🍽️ Aplikasi Restoran</h1>
+    <p class="creator">Muhammad Firli Rizki Maulana (052000983)</p>
+
+    <div class="menu-section">
+      <h2>Daftar Menu</h2>
+      <div id="menu-list"></div>
+    </div>
+
+    <div class="order-section">
+      <h2>Pemesanan</h2>
+
+      <select id="menuSelect"></select>
+      <input type="number" id="qty" placeholder="Jumlah" min="1">
+      <button onclick="tambahPesanan()">Tambah Pesanan</button>
+
+      <h3>Daftar Pesanan</h3>
+      <div id="order-list"></div>
+
+      <button class="checkout" onclick="checkout()">Cetak Struk</button>
+    </div>
+
+    <div class="receipt-section">
+      <h2>Struk Pembayaran</h2>
+      <div id="receipt"></div>
+    </div>
+
+    <div class="admin-section">
+      <h2>Manajemen Menu</h2>
+
+      <input type="text" id="newName" placeholder="Nama Menu">
+      <input type="number" id="newPrice" placeholder="Harga">
+      <select id="newCategory">
+        <option value="Makanan">Makanan</option>
+        <option value="Minuman">Minuman</option>
+      </select>
+
+      <button onclick="tambahMenu()">Tambah Menu</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
